@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <style>
+        .book {
+            margin-right: 10rem;
+        }
+        body {
+            font-size: 1.5rem;
+            line-height: 10;
+        }
+        .center {
+            text-align: center; /* Выравнивание по центру */
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+    <a class="book" th:method="GET" th:href="@{/library/books}">Книги</a>
+
+    <a th:href="@{/library/students}">Студенты</a>
+</div>
+</body>
+</html>
